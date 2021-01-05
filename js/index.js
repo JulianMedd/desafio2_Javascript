@@ -17,6 +17,15 @@ function saberNumPrimo(num){
     return true;
 }
 
+/* los primeros 100 primos */
+
+function losPrimeros100Primos(){
+    for(let i=0; i <= 100; i++){
+        if(saberNumPrimo(i))
+            console.log(i);
+    }
+}
+
 /*funcion para mostrar los primos entre*/
 
 function numerosPrimosEntre(desde,hasta){
@@ -53,5 +62,5 @@ function mostrarPromedio(numero1,numero2){
     alert(promedio);
 }
 
-mostrarPromedio(8, 10);
-numPrimosDesde(5);
+losPrimeros100Primos();
+mostrarPromedio(2,7);
