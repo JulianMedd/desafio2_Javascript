@@ -49,7 +49,7 @@ function numPrimosDesde(numInicial){
 /* los primeros 100 numeros primos */
 
 function losPrimeros100NumPrimos(){
-    let contadorPrimos = 0;
+    let contadorPrimos = 1;
     let numero = 0;
     while(contadorPrimos <= 100){
         numero++;
