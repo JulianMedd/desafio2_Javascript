@@ -19,7 +19,7 @@ function saberNumPrimo(num){
 
 /* los primeros 100 primos */
 
-function losPrimeros100Primos(){
+function losPrimerosNumPrimosHasta100(){
     for(let i=0; i <= 100; i++){
         if(saberNumPrimo(i))
             console.log(i);
@@ -46,6 +46,20 @@ function numPrimosDesde(numInicial){
     }
 }
 
+/* los primeros 100 numeros primos */
+
+function losPrimeros100NumPrimos(){
+    let contadorPrimos = 0;
+    let numero = 0;
+    while(contadorPrimos <= 100){
+        numero++;
+        if(saberNumPrimo(numero)){
+            console.log(numero);
+            contadorPrimos++;
+        }  
+    }
+}
+
 /*funcion promedio*/
 
 function suma(num1,num2){
@@ -62,5 +76,4 @@ function mostrarPromedio(numero1,numero2){
     alert(promedio);
 }
 
-losPrimeros100Primos();
-mostrarPromedio(2,7);
+losPrimeros100NumPrimos();
